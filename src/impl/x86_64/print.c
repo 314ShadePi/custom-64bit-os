@@ -45,7 +45,7 @@ void print_newline() {
         }
     }
 
-    clear_row(NUM_COLS - 1);
+    clear_row(NUM_ROWS - 1);
 }
 
 void print_char(char character) {
@@ -54,7 +54,7 @@ void print_char(char character) {
         return;
     }
 
-    if (col > NUM_COLS) {
+    if (col >= NUM_COLS) {
         print_newline();
     }
 
